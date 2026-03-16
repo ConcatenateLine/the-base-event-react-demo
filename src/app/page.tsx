@@ -1,5 +1,6 @@
 import EventTestPanel from "./components/EventTestPanel";
 import BufferDemo from "./components/BufferDemo";
+import ReactIntegrationDemo from "./components/ReactIntegrationDemo";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <main className="max-w-7xl mx-auto px-4 py-8 space-y-8">
         <EventTestPanel />
         <BufferDemo />
+        <ReactIntegrationDemo />
       </main>
     </div>
   );
