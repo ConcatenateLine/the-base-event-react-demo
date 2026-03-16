@@ -1,10 +1,10 @@
 # The Base Event Demo
 
-> Real-world implementation demonstrating the characteristics of the `the-base-event` npm package in a Next.js application.
+> Use-case implementation demonstrating the characteristics of the `the-base-event` npm package in a Next.js application.
 
 ## Overview
 
-This project demonstrates practical, real-world usage of the-base-event package features in an e-commerce notification system. Unlike controlled unit tests, this implementation showcases how the library works in a realistic application environment.
+This project demonstrates practical, use-case usage of the-base-event package features in an e-commerce notification system. Unlike controlled unit tests, this implementation showcases how the library works in a realistic application environment.
 
 ## Features Implemented
 
