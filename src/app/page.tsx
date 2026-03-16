@@ -3,6 +3,7 @@ import BufferDemo from "./components/BufferDemo";
 import ReactIntegrationDemo from "./components/ReactIntegrationDemo";
 import SSRDemo from "./components/SSRDemo";
 import SecurityDemo from "./components/SecurityDemo";
+import ValidationDemo from "./components/ValidationDemo";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <ReactIntegrationDemo />
         <SSRDemo />
         <SecurityDemo />
+        <ValidationDemo />
       </main>
     </div>
   );

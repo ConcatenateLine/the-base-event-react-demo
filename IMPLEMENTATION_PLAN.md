@@ -185,20 +185,25 @@
 **Objective**: Validate event payloads with JSON Schema
 
 #### Task 6.1: Order Validation
-- [ ] Emit valid order event
-- [ ] Verify validation passes
-- [ ] Emit invalid order (missing fields)
-- [ ] Verify validation fails with errors
+- [x] Emit valid order event
+- [x] Verify validation passes
+- [x] Emit invalid order (missing fields)
+- [x] Verify validation fails with errors
 
 #### Task 6.2: Payment Validation
-- [ ] Test valid payment method enum
-- [ ] Test invalid payment method rejection
-- [ ] Test nested object validation
+- [x] Test valid payment method enum
+- [x] Test invalid payment method rejection
+- [x] Test nested object validation
 
 #### Task 6.3: Validation Middleware
-- [ ] Create validation middleware for specific channels
-- [ ] Attach to emitter
-- [ ] Verify invalid events are rejected
+- [x] Create validation middleware for specific channels
+- [x] Attach to emitter
+- [x] Verify invalid events are rejected
+
+---
+
+**Implemented in:**
+- `src/app/components/ValidationDemo.tsx` - Interactive validation demo with order/payment schemas, enum validation, validation logs, and middleware toggle
 
 ---
 
