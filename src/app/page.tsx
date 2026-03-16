@@ -2,6 +2,7 @@ import EventTestPanel from "./components/EventTestPanel";
 import BufferDemo from "./components/BufferDemo";
 import ReactIntegrationDemo from "./components/ReactIntegrationDemo";
 import SSRDemo from "./components/SSRDemo";
+import SecurityDemo from "./components/SecurityDemo";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <BufferDemo />
         <ReactIntegrationDemo />
         <SSRDemo />
+        <SecurityDemo />
       </main>
     </div>
   );
