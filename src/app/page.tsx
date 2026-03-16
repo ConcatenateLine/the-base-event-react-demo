@@ -4,6 +4,7 @@ import ReactIntegrationDemo from "./components/ReactIntegrationDemo";
 import SSRDemo from "./components/SSRDemo";
 import SecurityDemo from "./components/SecurityDemo";
 import ValidationDemo from "./components/ValidationDemo";
+import Dashboard from "./components/Dashboard";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <SSRDemo />
         <SecurityDemo />
         <ValidationDemo />
+        <Dashboard />
       </main>
     </div>
   );
