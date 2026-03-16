@@ -1,4 +1,5 @@
 import EventTestPanel from "./components/EventTestPanel";
+import BufferDemo from "./components/BufferDemo";
 
 export default function Home() {
   return (
@@ -11,8 +12,9 @@ export default function Home() {
           </p>
         </div>
       </header>
-      <main className="max-w-7xl mx-auto px-4 py-8">
+      <main className="max-w-7xl mx-auto px-4 py-8 space-y-8">
         <EventTestPanel />
+        <BufferDemo />
       </main>
     </div>
   );

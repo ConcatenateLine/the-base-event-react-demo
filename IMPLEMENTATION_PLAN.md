@@ -53,26 +53,41 @@
 **Objective**: Demonstrate intelligent event buffering with different strategies
 
 #### Task 2.1: LRU Strategy Implementation
-- [ ] Configure emitter with LRU buffer (maxSize: 10)
-- [ ] Emit 15 events to a single channel
-- [ ] Verify oldest 5 are evicted
-- [ ] Verify most recent 10 are retained
+- [x] Configure emitter with LRU buffer (maxSize: 10)
+- [x] Emit 15 events to a single channel
+- [x] Verify oldest 5 are evicted
+- [x] Verify most recent 10 are retained
 
 #### Task 2.2: FIFO Strategy Implementation  
-- [ ] Configure emitter with FIFO buffer
-- [ ] Emit events and verify order of retention
-- [ ] Compare behavior with LRU
+- [x] Configure emitter with FIFO buffer
+- [x] Emit events and verify order of retention
+- [x] Compare behavior with LRU
 
 #### Task 2.3: TTL Expiration
-- [ ] Set TTL to 2 seconds
-- [ ] Emit event, wait 3 seconds
-- [ ] Verify event is automatically removed
-- [ ] Test with multiple events
+- [x] Set TTL to 2 seconds
+- [x] Emit event, wait 3 seconds
+- [x] Verify event is automatically removed
+- [x] Test with multiple events
 
 #### Task 2.4: Buffer Metrics
-- [ ] Access buffer state via `getBuffered()`
-- [ ] Display buffer utilization
-- [ ] Monitor memory usage
+- [x] Access buffer state via `getBuffered()`
+- [x] Display buffer utilization
+- [x] Monitor memory usage
+
+#### UI Features Implemented
+- [x] Buffer configuration panel with strategy dropdown (LRU/FIFO), max size input, TTL input
+- [x] Test control buttons: "Test LRU", "Test FIFO", "Test TTL", "Run All Tests", "Clear Buffer"
+- [x] Real-time buffered events table showing event number, data, and TTL remaining
+- [x] Test results panel with pass/fail indicators
+- [x] Manual event emission buttons ("Emit Single Event", "Emit 5 Events")
+- [x] Live metrics display (strategy, max size, TTL, buffered count, utilization %)
+
+---
+
+**Implemented in:**
+- `src/app/components/BufferDemo.tsx` - Interactive buffer strategy demo with LRU/FIFO/TTL tests
+- `src/app/components/EventProvider.tsx` - Added `updateConfig` for runtime config changes
+- `src/app/page.tsx` - Added BufferDemo below EventTestPanel
 
 ---
 

@@ -20,6 +20,7 @@ interface EventContextValue {
   getMetrics: () => PerformanceMetrics;
   clear: (channel?: string) => void;
   destroy: () => void;
+  updateConfig: (config: Partial<EventEmitterConfig>) => void;
 }
 
 const EventContext = createContext<EventContextValue | null>(null);
@@ -98,6 +99,12 @@ export function EventProvider({ children, config }: EventProviderProps) {
     }
   }, []);
 
+  const updateConfig = useCallback((config: Partial<EventEmitterConfig>) => {
+    if (emitterRef.current) {
+      (emitterRef.current as any).updateConfig?.(config);
+    }
+  }, []);
+
   const value: EventContextValue = {
     emitter: null as unknown as EventEmitter,
     isReady,
@@ -107,6 +114,7 @@ export function EventProvider({ children, config }: EventProviderProps) {
     getMetrics,
     clear,
     destroy,
+    updateConfig,
   };
 
   return (
